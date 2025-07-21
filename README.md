@@ -1,10 +1,10 @@
 # Guess_Color
 
-##Overview
+# Overview
 
 ColorGuessGame is an interactive command-line game where players guess a randomly selected color from a list of three options. With a limited number of attempts (default: 2), players aim to guess the correct color, guided by AI-generated hints after incorrect guesses. The game provides a fun and engaging experience with colorful feedback and emojis.
 
-##Features
+# Features
 
 
 
