@@ -12,8 +12,7 @@ walker colorGuess {
 }
 
 node GameSession {
-    #has color: str;
-    has attempts_left: int = 2;
+    has attempts_left: int = 1;
 }
 
 # Will run when in CLI mode 

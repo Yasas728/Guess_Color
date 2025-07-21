@@ -30,27 +30,26 @@ impl colorGuess.process_guess {
         if guess != color {
             here.attempts_left -= 1;
             if here.attempts_left > 0 {
-                print(f"❌ Oops! '{guess}' is not correct!");
-                print(f"💪 Attempts left: {here.attempts_left}");
+                print(f"Oops! '{guess}' is not correct!");
                 
                 # Generate AI hint 
-                hint = give_color(guess, color, 4 - here.attempts_left);
-                print(f"💡 AI Hint: {hint}");
-                print("🔄 Keep trying! You've got this! ");
+                hint = give_color(guess, color, 2 - here.attempts_left);
+                print(f"AI Hint: {hint}");
+                print("Keep trying! You've got this! ");
                 print("-" * 40);
                 
                 here ++> GameSession(here.attempts_left);
             } else {
-                print(f"💀 Game Over! No more attempts left! ");
-                print(f"🎯 The correct color was: {color}");
-                print(f"🎮 Better luck next time, adventurer! 🍀");
+                print(f"Game Over! No more attempts left! ");
+                print(f"The correct color was: {color}");
+                print(f"Better luck next time, adventurer!");
                 print("=" * 50);
                 disengage;
             }
         } else {
-            print(f"CONGRATULATIONS! 🎉");
-            print(f"You guessed '{guess}' correctly! 🏆");
-            print(f"You are an Color Guessing Champion! 🌟");
+            print(f"CONGRATULATIONS!");
+            print(f"You guessed '{guess}' correctly!");
+            print(f"You are an Color Guessing Champion!");
             print("=" * 50);
             disengage;
         }
